@@ -74,13 +74,13 @@ def math_quiz():
                 print("Error. Please enter a valid integer.")
                 
         # Check the user's answer.
-        if useranswer == CORRECT_ANSWER:
+        if user_answer == CORRECT_ANSWER:
             print("Correct! You earned a point.")
             score += 1
         else:
             print(f"Wrong answer. The correct answer is {CORRECT_ANSWER}.")
 
-    print(f"\nGame over! Your score is: {s}/{t_q}")
+    print(f"\nGame over! Your score is: {score}/{total_questions}")
 
 if __name__ == "__main__":
     math_quiz()
